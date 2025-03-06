@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "PACK",
+  "version": "1.0",
+  "description": "A small Chrome extension game where you create a factory to PACK packages!",
+  "icons": {
+    "16": "assets/PACKlogo16.png",
+    "48": "assets/PACKlogo48.png",
+    "128": "assets/PACKlogo128.png"
+  },
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_icon": {
+      "16": "assets/PACKlogo16.png",
+      "48": "assets/PACKlogo48.png",
+      "128": "assets/PACKlogo128.png"
+    }
+  },
+  "permissions": ["tabs"],
+  "host_permissions": ["<all_urls>"]
+}
