@@ -19,14 +19,22 @@ This is a chrome extension game intended to be installed of the chrome extension
 
 __KeyBinds:__
 
-Action | Key 
+Key | Action
  ------------ | ------------- 
-Place Structure | “1”, then, “M1/Click” 
-Delete Structures | “e”, then,  “click/M1” 
-Rotate Tiles | “r” 
-Flip Tiles | “f/u” 
-Change Tile | “t” 
-Open Settings | “NA” 
+Key: E | Action: delete tile
+Key: T | Action: change equipt tile
+Key: S | Action: save game
+Key: , | Action: NA
+Key: . | Action: NA
+Key: R | Action: rotate equipt tile
+Key: U | Action: flip equipt tile
+Key: 1 | Action: equip tile 1
+Key: 2 | Action: equip tile 2
+Key: 3 | Action: equip tile 3
+Key: 4 | Action: equip tile 4
+Key: 5 | Action: equip tile 5
+Key: 6 | Action: equip tile 6
+Key: 7 | Action: equip tile 7
 
 * * *
 ### License Information
