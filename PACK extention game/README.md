@@ -12,21 +12,31 @@ A small factory game about files, packages, trucks and more, made as a fun way o
 * * *
 ### Instalation Instructions
 
-This is a chrome extension game intended to be installed of the chrome extension store under the name: “PACK!” by ryan
+This is a chrome extension game intended to be installed of the chrome extension store under the name: “PACK” by rewy
+
+currently not compatiple with touch screen
 
 * * *
 ### How To Use
 
 __KeyBinds:__
 
-Action | Key 
+Key | Action 
  ------------ | ------------- 
-Place Structure | “1”, then, “M1/Click” 
-Delete Structures | “e”, then,  “click/M1” 
-Rotate Tiles | “r” 
-Flip Tiles | “f/u” 
-Change Tile | “t” 
-Open Settings | “NA” 
+Key: E | Action: delete tile
+Key: T | Action: change equipt tile
+Key: S | Action: save game
+Key: , | Action: NA
+Key: . | Action: NA
+Key: R | Action: rotate equipt tile
+Key: U | Action: flip equipt tile
+Key: 1 | Action: equip tile 1
+Key: 2 | Action: equip tile 2
+Key: 3 | Action: equip tile 3
+Key: 4 | Action: equip tile 4
+Key: 5 | Action: equip tile 5
+Key: 6 | Action: equip tile 6
+Key: 7 | Action: equip tile 7
 
 * * *
 ### License Information
@@ -50,7 +60,7 @@ please contact me if you would like to use my game or assets in a video or your 
 * * *
 ### Acknowledgements
 
-This Project has been made on VSCode and I have used ChatGPT, w3schools, stacks, and other websites to gain knowledge on coding syntax and how key functions such as a tiling system work. 
+This Project has been made on VSCode and I have used AI, w3schools, stacks, and other websites to gain knowledge on coding syntax and how key functions such as a tiling system work. 
 
 * * *
 ### Author Details 
