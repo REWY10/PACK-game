@@ -63,7 +63,7 @@ This Project has been made on VSCode and I have used ChatGPT, w3schools, stacks,
 * * *
 ### Author Details 
 
-This project was made completely by me, Ryan Hanna including all pixel art sprites and code. 
+This project was made completely by me, Ryan including all pixel art sprites and code. 
 
 #### Contacts:  
 
