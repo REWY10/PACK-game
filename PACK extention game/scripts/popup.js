@@ -69,34 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
         fallingPackagesInterval = setInterval(createFallingPackage, 600); // Generate packages at intervals (this part handles falling packages)
     }
 
-    // function loadDFDscreen() {
-    //     zoomCameraOut();
-    //     setTimeout(() => {
-    //         document.body.style.backgroundColour = "#dbdbdb";
-    //     }, 1000);
-        
-    //     screen.innerHTML = `
-    //         <div class="background-container"></div>
-    //         <div id="popUpBox">
-    //             <div id="gameMenu"></div>
-    //             <div id="openGameMenu">
-    //                 <div id="Popup"></div>
-    //                 <div id="optionsPopup"></div>
-    //                 <div id="settingsPopup"></div>
-    //             </div>
-    //         </div>
-    //     `;
-
-    //     createGameMenuButtons();
-    //     document.addEventListener("mousemove", (event) => {
-    //         let mouseY = event.y;
-    //         let mouseX = event.x;
-    //         menuPopup(mouseY);
-
-        
-    //     });
-    // }
-
     function loadDFDscreen() {
         // Hide tile-related elements
         document.getElementById('tile-container').style.display = 'none';
@@ -238,13 +210,10 @@ document.addEventListener("DOMContentLoaded", function () {
         gameMenu.classList.add('animated');
 
         openMenu.style.width = "230px";
-        
-        // menuButton.style.visibility = "hidden";
 
         setTimeout(() => {
             gameMenu.classList.remove('animated');
             gameMenu.classList.add('open');
-            // menuButton.style.visibility = "visible";
         }, 500); // Remove animation class after 0.5 second
     }
 
@@ -769,20 +738,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let tutorialStarted = false;
 
-    function startTutorial () {
-        if (tutorialStarted) return;
-        tutorialStarted = true;
-        console.log("tutoral started!");
+    function startTutorial() {
         const overlay = document.getElementById("tutorial-overlay");
         
-        const view = document.createElement("div");
-        view.id = "tutorial_view";
-        // let viewX = 0;
-        // let viewY = 0;
-        // view.style.left = `${viewX} px`;
-        // view.style.top = `${viewY} px`;
-        // overlay.appendChild(view);
-
+        if (tutorialStarted) {
+            // Turn off tutorial
+            overlay.style.display = 'none';
+            tutorialStarted = false;
+            
+            // Clean up any tutorial elements
+            const textBox = document.getElementById("tutorial_textBox");
+            if (textBox) {
+                overlay.removeChild(textBox);
+            }
+            
+            // Clean up dialog if it exists
+            if (window.dialog) {
+                window.dialog = null;
+            }
+            
+            return;
+        }
+        
+        // Turn on tutorial
+        overlay.style.display = 'block';
+        tutorialStarted = true;
+        console.log("tutorial started!");
+        
+        // Create tutorial elements
         const text_box = document.createElement("div");
         text_box.id = "tutorial_textBox";
         text_box.style.right = "-10px";
@@ -794,8 +777,7 @@ document.addEventListener("DOMContentLoaded", function () {
         text_box.appendChild(text);
         overlay.appendChild(text_box);
 
-        //tutorial dialogues:
-
+        // Tutorial dialogues
         const scene1 = [
             "Welcome to the Tutorial... ('CLICK' to continue)",
             {
@@ -822,27 +804,12 @@ document.addEventListener("DOMContentLoaded", function () {
             "Now place roads facing out from the file factory until they reach the edge of the grid",
             "Once you have a complete road a trolley will spawn and deliver 1 file",
             "Great now you've learnt the basics, ('CLICK' to continue)",
-        
         ];
-        // Initialize it
+        
+        // Initialize dialog
         const dialog = new DialogBox();
         window.dialog = dialog;
         dialog.playEventSequence(scene1);
-
-
-        // // Usage examples:
-        // // Show first message
-        // tutorialDialog.type("Welcome to the tutorial! . . .", 50);
-
-        // // Append additional text after first message completes
-        // setTimeout(() => {
-        // tutorialDialog.type("\n\nUse WASD to move around.", 50, true);
-        // }, 2000);
-
-        // Skip the animation if player clicks
-        // document.getElementById('tutorial_textBox').addEventListener('click', () => {
-        // tutorialDialog.skip();
-        // });
     }
 
 

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PACK",
-  "version": "1.7",
+  "version": "1.8",
   "description": "A small Chrome extension game where you create a factory to PACK packages!",
   "permissions": ["storage"],
   "icons": {
