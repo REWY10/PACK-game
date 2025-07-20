@@ -21,20 +21,24 @@ __KeyBinds:__
 
 Key | Action
  ------------ | ------------- 
-Key: E | Action: delete tile
-Key: T | Action: change equipt tile
-Key: S | Action: save game
-Key: , | Action: NA
-Key: . | Action: NA
-Key: R | Action: rotate equipt tile
-Key: U | Action: flip equipt tile
-Key: 1 | Action: equip tile 1
-Key: 2 | Action: equip tile 2
-Key: 3 | Action: equip tile 3
-Key: 4 | Action: equip tile 4
-Key: 5 | Action: equip tile 5
-Key: 6 | Action: equip tile 6
-Key: 7 | Action: equip tile 7
+E | delete tile 
+T | next tile 
+S | save game 
+I | Normal Mode 
+O | DFD mode 
+R | rotate tile 
+U | flip tile 
+1 | straight road 
+2 | turn road 
+3 | split road 
+4 | files factory 
+5 | package factory 
+6 | files storage 
+7 | package storage 
+G | DEBUG Deliver File 
+H | DEBUG Clear Files 
+L | DEBUG Tile Check 
+O | DEBUG toggle coordinate
 
 * * *
 ### License Information
